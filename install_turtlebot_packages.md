@@ -23,5 +23,6 @@ sudo apt install ros-foxy-turtlebot3
 #### Set the ROS environment for PC
 ```bash
 echo "export ROS_DOMAIN_ID=30" >> ~/.bashrc
+echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 source ~/.bashrc
 ```
