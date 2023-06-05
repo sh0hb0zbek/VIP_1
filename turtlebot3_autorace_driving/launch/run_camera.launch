@@ -1,0 +1,6 @@
+<launch>
+  <!-- turtlebot3_autorace_camera extrinsic_camera_calibration.launch mode:=calibration -->
+  <include file="$(find turtlebot3_autorace_camera)/launch/extrinsic_camera_calibration_copy.launch" />
+  <!-- turtlebot3_autorace_camera intrinsic_camera_calibration.launch mode:=calibration 3333333333333333333333333333333333333333333333-->
+  <include file="$(find turtlebot3_autorace_camera)/launch/intrinsic_camera_calibration.launch" />
+</launch>

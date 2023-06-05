@@ -1,0 +1,20 @@
+<launch>
+  <!-- <arg name="mission" default="traffic_light" doc="mission type [traffic_light, intersection, construction, parking, level_crossing, tunnel]"/> -->
+  <node pkg="turtlebot3_autorace_core" type="traffic_light_core_node_controller" name="traffic_light_core_node_controller" output="screen"/>
+  <node pkg="turtlebot3_autorace_core" type="traffic_light_core_mode_decider" name="traffic_light_core_mode_decider" output="screen"/>
+  
+  <node pkg="turtlebot3_autorace_core" type="intersection_core_node_controller" name="intersection_core_node_controller" output="screen"/>
+  <node pkg="turtlebot3_autorace_core" type="intersection_core_mode_decider" name="intersection_core_mode_decider" output="screen"/>
+  
+  <node pkg="turtlebot3_autorace_core" type="construction_core_node_controller" name="construction_core_node_controller" output="screen"/>
+  <node pkg="turtlebot3_autorace_core" type="construction_core_mode_decider" name="construction_core_mode_decider" output="screen"/>
+  
+  <node pkg="turtlebot3_autorace_core" type="parking_core_node_controller" name="parking_core_node_controller" output="screen"/>
+  <node pkg="turtlebot3_autorace_core" type="parking_core_mode_decider" name="parking_core_mode_decider" output="screen"/>
+  
+  <!-- <node pkg="turtlebot3_autorace_core" type="level_crossing_core_node_controller" name="level_crossing_core_node_controller" output="screen"/>
+  <node pkg="turtlebot3_autorace_core" type="level_crossing_core_mode_decider" name="level_crossing_core_mode_decider" output="screen"/> -->
+  
+  <!-- <node pkg="turtlebot3_autorace_core" type="tunnel_core_node_controller" name="tunnel_core_node_controller" output="screen"/>
+  <node pkg="turtlebot3_autorace_core" type="tunnel_core_mode_decider" name="tunnel_core_mode_decider" output="screen"/> -->
+</launch>

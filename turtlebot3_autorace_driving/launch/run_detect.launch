@@ -1,0 +1,10 @@
+<launch>
+  <!-- turtlebot3_autorace_detect detect_construction.launch -->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_construction.launch" />
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_intersection.launch" />
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_lane_copy.launch" />
+  <!-- <include file="$(find turtlebot3_autorace_detect)/launch/detect_level_crossing_copy.launch" /> -->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_parking.launch" />
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_traffic_light.launch" />
+  <!-- <include file="$(find turtlebot3_autorace_detect)/launch/detect_tunnel.launch" /> -->
+</launch>

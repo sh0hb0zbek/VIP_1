@@ -1,0 +1,10 @@
+<launch>
+  <!-- turtlebot3_autorace_driving turtelbot3_autorace_control_lane.launch -->
+  <include file="$(find turtlebot3_autorace_driving)/launch/turtlebot3_autorace_control_lane.launch" />
+  <!-- turtlebot3_autorace_driving turtelbot3_autorace_control_tunnel.launch --> <!-- ############################-->
+<!--
+  <include file="$(find turtlebot3_autorace_driving)/launch/turtlebot3_autorace_control_tunnel.launch" />
+-->
+  <!-- turtlebot3_autorace_driving turtelbot3_autorace_control_moving.launch -->
+  <include file="$(find turtlebot3_autorace_driving)/launch/turtlebot3_autorace_control_moving.launch" />
+</launch>

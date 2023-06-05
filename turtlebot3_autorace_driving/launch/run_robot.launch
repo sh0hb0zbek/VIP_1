@@ -1,0 +1,39 @@
+<launch>
+  <!-- turtlebot3_autorace_camera extrinsic_camera_calibration.launch mode:=calibration -->
+  <include file="$(find turtlebot3_autorace_camera)/launch/extrinsic_camera_calibration_copy.launch" />
+  <!-- turtlebot3_autorace_camera intrinsic_camera_calibration.launch mode:=calibration 3333333333333333333333333333333333333333333333-->
+  <include file="$(find turtlebot3_autorace_camera)/launch/intrinsic_camera_calibration.launch" />
+
+
+  <!-- turtlebot3_autorace_detect detect_construction.launch -->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_construction.launch" />
+  <!-- turtlebot3_autorace_detect detect_level_crossing.launch        mode:=calibration 3333333333333333333333333333333333333333333333-->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_level_crossing_copy.launch" />
+  <!-- turtlebot3_autorace_detect detect_traffic_light.launch         mode:=calibration 3333333333333333333333333333333333333333333333-->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_traffic_light_copy.launch" />
+  <!-- turtlebot3_autorace_detect detect_intersection.launch -->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_intersection.launch" />
+  <!-- turtlebot3_autorace_detect detect_parking.launch -->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_parking.launch" />
+  <!-- turtlebot3_autorace_detect detect_lane.launch                  mode:=calibration 3333333333333333333333333333333333333333333333-->
+  <include file="$(find turtlebot3_autorace_detect)/launch/detect_lane_copy.launch" />
+  
+  
+  <!-- turtlebot3_autorace_core turtlebot3_autorace_core.launch -->
+  <include file="$(find turtlebot3_autorace_core)/launch/turtlebot3_autorace_core.launch" />
+  <!-- turtlebot3_autorace_core turtlebot3_autorace_mission.launch --> <!-- ##################################-->
+  <include file="$(find turtlebot3_autorace_core)/launch/turtlebot3_autorace_mission.launch" />
+
+
+  <!-- turtlebot3_autorace_driving turtelbot3_autorace_control_lane.launch -->
+  <include file="$(find turtlebot3_autorace_driving)/launch/turtlebot3_autorace_control_lane.launch" />
+  <!-- turtlebot3_autorace_driving turtelbot3_autorace_control_tunnel.launch --> <!-- ############################-->
+<!--
+  <include file="$(find turtlebot3_autorace_driving)/launch/turtlebot3_autorace_control_tunnel.launch" />
+-->
+  <!-- turtlebot3_autorace_driving turtelbot3_autorace_control_moving.launch -->
+  <include file="$(find turtlebot3_autorace_driving)/launch/turtlebot3_autorace_control_moving.launch" />
+
+
+
+</launch>

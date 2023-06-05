@@ -1,0 +1,6 @@
+<launch>
+  <!-- turtlebot3_autorace_core turtlebot3_autorace_core.launch -->
+  <include file="$(find turtlebot3_autorace_core)/launch/turtlebot3_autorace_core.launch" />
+  <!-- turtlebot3_autorace_core turtlebot3_autorace_mission.launch --> <!-- ##################################-->
+  <include file="$(find turtlebot3_autorace_core)/launch/turtlebot3_autorace_mission.launch" />
+</launch>
